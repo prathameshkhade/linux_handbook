@@ -1,12 +1,10 @@
-# Chapter 13.2: Taming the Digital Mess with Containers: Docker & Podman - Your Secret Weapon
+## 13.2.1 Foundational concepts:
 
 Hey there, future tech wizards! Ever felt like your computer is a bit of a chaotic mess? You've got different projects fighting for space, libraries clashing, and sharing your work with friends feels like navigating a labyrinth? Yeah, I’ve been there. It's like trying to bake a cake in a kitchen that's constantly rearranging itself!
 
 But guess what? There’s a brilliant solution out there, something that's been a game-changer for me and countless other developers. It’s called **containerization**, and it’s all about keeping things organised, portable, and super efficient. Two of the coolest tools in this world are **Docker** and **Podman**. Think of them as your personal digital organisers, ready to bring order to the chaos.
 
 Let's dive into the foundational concepts of containers, Docker, and Podman, and I promise, by the end of this chapter, you'll see why they're such a big deal and how you can start using them to level up your tech game.
-
-## 13.2.1 Foundational concepts:
 
 ### **Understanding Containers: Your Personal, Portable Boxes**
 
@@ -69,7 +67,6 @@ Create a file named `app.py` with the following code:
 print("Hello from inside a container!")
 ```
     
-
 Now, create a file named `Dockerfile` (no extension) in the same directory as `app.py`, and put this inside:
 
 ```yaml
@@ -85,7 +82,6 @@ COPY app.py .
 # Command to run when the container starts
 CMD ["python", "app.py"]  
 ```
-    
 
 **Let's break down this Dockerfile:**
 
