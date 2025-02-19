@@ -142,19 +142,19 @@ But guess what? There’s a brilliant solution out there, something that's been 
 
 Let's dive into the foundational concepts of containers, Docker, and Podman, and I promise, by the end of this chapter, you'll see why they're such a big deal and how you can start using them to level up your tech game.
 
-### **Understanding Containers: Your Personal, Portable Boxes**
+### 13.2.1.1 **Understanding Containers: Your Personal, Portable Boxes**
 
 Imagine you're moving house. You wouldn't just throw all your belongings into a truck, right? Chaos would ensue! Instead, you pack things into boxes. You have boxes for kitchen stuff, boxes for books, boxes for clothes. Each box keeps things organized and separate.
 
 That's basically what a **container** is in the digital world. It's like a lightweight, portable box that holds everything an application needs to run: the code, the libraries, the configurations, and all the dependencies. And just like physical boxes make moving easier, containers make deploying and running applications a breeze.
 
-### **What are the benefits, you ask? Let’s break it down:**
+### 13.2.1.2 **What are the benefits, you ask? Let’s break it down:**
 
 *   **Isolation:** This is HUGE. Containers isolate applications from each other and from the underlying system. Think of it like having separate rooms in your house. If something goes wrong in the living room (one container crashes), it doesn't mess up the kitchen (another container) or the whole house (your operating system). This isolation makes your system much more stable and secure.
 *   **Portability:** Remember those moving boxes? You can easily load them onto any truck and move them anywhere. Containers are similar. Once you package your application into a container, it will run consistently across different environments – your laptop, a friend's computer, a server in the cloud – basically anywhere that supports container technology. This "write once, run anywhere" idea is incredibly powerful.
 *   **Efficiency:** Containers are lightweight because they share the host operating system's kernel. Unlike virtual machines (VMs), which are like running an entire operating system within another operating system (resource heavy!), containers are more like processes that are isolated. This makes them much faster to start and use fewer resources. Think of it as renting an apartment (container) versus building a whole new house (VM) every time you need space.
 
-### **Containers vs. Virtual Machines (VMs): The Quick Rundown**
+### 13.2.1.3 **Containers vs. Virtual Machines (VMs): The Quick Rundown**
 
 We just touched on VMs. Let’s quickly clarify the difference because it’s a common question.
 
@@ -167,7 +167,7 @@ We just touched on VMs. Let’s quickly clarify the difference because it’s a 
 
 **Think of it this way:** VMs are like having multiple full computers running on your computer, each with its own OS. Containers are like having multiple isolated applications running on your computer, all sharing the same OS kernel but in their own little boxes.
 
-### **Time for a bit of action! Let's try running a simple container.**
+### 13.2.1.4 **Time for a bit of action! Let's try running a simple container.**
 
 Assuming you have Docker or Podman installed (don't worry if you don't right now, we'll get there!), open your terminal (command prompt or PowerShell on Windows, Terminal on Mac/Linux). And type this command:
 
@@ -183,7 +183,7 @@ Assuming you have Docker or Podman installed (don't worry if you don't right now
 
 Hit Enter. What happened? You should see some output, probably starting with "Hello from Docker!" or "Hello from Podman!". Congratulations! You just ran your first container! This `hello-world` image is a super simple container designed to show you that containers are working on your system.
 
-### **Dockerfile Basics: Your Container Recipe**
+### 13.2.1.5 **Dockerfile Basics: Your Container Recipe**
 
 Okay, so we've run a container. Cool! But how are these containers actually _made_? That's where **Dockerfiles** come in.
 
@@ -250,7 +250,7 @@ After the build process completes successfully, you can run your new image:
 
 You should see "Hello from inside a container!" printed in your terminal! You just built and ran your own container image! How cool is that?
 
-### **OCI Standard: Speaking the Same Language**
+### 13.2.1.6 **OCI Standard: Speaking the Same Language**
 
 Okay, last foundational piece: the **OCI Standard**. You might see this acronym pop up – it stands for **Open Container Initiative**. Think of it as the common language that container tools speak.
 
@@ -484,19 +484,19 @@ spec:
     
 3.  **Apply the deployment to your Kubernetes cluster:**
     
-        kubectl apply -f deployment.yaml
+        $ kubectl apply -f deployment.yaml
         
     
     This command tells Kubernetes to create the deployment described in the `deployment.yaml` file.
     
 4.  **Check the status of your deployment:**
     
-        kubectl get deployments
+        $ kubectl get deployments
         
     
 5.  **Check the status of your Pods:**
     
-        kubectl get pods
+        $ kubectl get pods
         
     
 
@@ -656,7 +656,7 @@ Finally, we have the **Control Plane**. This is like the central command center 
 
 You don't directly interact with the Control Plane using `kubectl` day-to-day, but it’s always there, behind the scenes, orchestrating everything. You can get basic information about your cluster with:
 
-    kubectl cluster-info
+    $ kubectl cluster-info
     
 
 ### 13.3.7 kubectl: Your Party Command Center (Command-Line Tool)
