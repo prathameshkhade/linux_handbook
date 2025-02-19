@@ -59,7 +59,7 @@ Understand the Open Container Initiative (OCI) standard which both Docker and Po
 
 ## 13.2.2 Docker Fundamentals
 - `Installing Docker:`
-Set up Docker on your system and learn basic commands like docker pull, docker run, docker ps, docker build. 
+Set up Docker on your system (ubunut & redhat) and learn basic commands like docker pull, docker run, docker ps, docker build, docker images, etc. 
 - `Building a Simple Container`:
 Create a Dockerfile for a basic application (e.g., a web server) and build your first container image. 
 - `Managing Containers`:
@@ -70,7 +70,7 @@ Explore container networking options like bridge mode, host mode, and how to lin
 Understand how to mount volumes to persist data within a container. 
 
 ### 13.2.3 Podman Basics
-- `Installing Podman:` Install Podman on your system and compare its command structure to Docker. 
+- `Installing Podman:` Install Podman on your system (ubuntu and redhat) and compare its command structure to Docker. 
 - `Running Containers with Podman`: Use podman run to execute containers using the same Docker images. 
 - `Key Differences`: Focus on the major distinction between Docker (daemon-based) and Podman (daemonless) and how it affects container management. 
 - `Rootless Containers`: Explore the concept of running containers as a non-root user with Podman for enhanced security. 
