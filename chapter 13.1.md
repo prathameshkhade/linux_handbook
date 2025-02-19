@@ -135,4 +135,3 @@ Let’s recap the key tools and commands we touched upon:
 Virtualization might seem a bit complex at first, but it's an incredibly powerful tool in your Linux arsenal. It allows you to experiment, learn, and build incredible things, all within the safety of your virtual environment.
 
 And guess what? Virtualization is the stepping stone to our next big adventure: **Containers!** We've built our virtual apartment building, now imagine making each apartment even lighter, faster, and easier to deploy – that’s the magic of containers. We’ll explore that in the next chapter (or maybe even the next level of your tech journey!). Keep practicing with VMs, and you'll be well on your way to becoming a virtualization hero!
-
