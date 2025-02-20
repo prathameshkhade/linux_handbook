@@ -903,7 +903,7 @@ This `iptables` rule is a bit more complex, but it demonstrates the concept of r
 
 Rate limiting is not a silver bullet against all DDoS attacks, especially large, sophisticated ones. But it's a valuable technique to have in your security toolkit, especially for mitigating smaller-scale or simpler DDoS attempts and for protecting against certain types of abuse.
 
-### 15.7 Security Auditing and Compliance: Checking the Fortress for Weaknesses
+## 15.7 Security Auditing and Compliance: Checking the Fortress for Weaknesses
 
 Building a strong fortress (your secure Linux system) is important, but it's equally crucial to regularly **audit** it – to check for weaknesses, misconfigurations, and potential vulnerabilities. Think of it as a regular security inspection of your castle walls, gates, and defenses. And "compliance" is about making sure your fortress meets certain security standards or guidelines.
 
