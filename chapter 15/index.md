@@ -30,18 +30,18 @@
 - Secure remote backups using `rsync` and `ssh`  
 - Automating encrypted backups with `duplicity`  
 
-## **3. Mandatory Access Control (SELinux & AppArmor)**  
-   - **Understanding Mandatory Access Control (MAC) vs. Discretionary Access Control (DAC)**  
-     - Difference between SELinux, AppArmor, and traditional Linux permissions  
-   - **SELinux (Security-Enhanced Linux) - Red Hat Based Systems**  
-     - SELinux modes: Enforcing, Permissive, Disabled  
-     - Understanding SELinux contexts and labels  
-     - Managing SELinux policies using `semanage`, `setsebool`, `audit2allow`  
-     - Troubleshooting SELinux denials (`ausearch`, `sealert`)  
-   - **AppArmor - Ubuntu and Debian-Based Systems**  
-     - Enabling and managing AppArmor profiles  
-     - Creating custom AppArmor policies  
-     - Debugging AppArmor violations (`aa-status`, `journalctl`)  
+## 3. Mandatory Access Control (SELinux & AppArmor)
+### 15.3.1 Understanding Mandatory Access Control (MAC) vs. Discretionary Access Control (DAC)**  
+- Difference between SELinux, AppArmor, and traditional Linux permissions  
+### 15.3.2 SELinux (Security-Enhanced Linux) - Red Hat Based Systems**  
+- SELinux modes: Enforcing, Permissive, Disabled  
+- Understanding SELinux contexts and labels  
+- Managing SELinux policies using `semanage`, `setsebool`, `audit2allow`  
+- Troubleshooting SELinux denials (`ausearch`, `sealert`)  
+### 15.3.3 AppArmor - Ubuntu and Debian-Based Systems**  
+- Enabling and managing AppArmor profiles  
+- Creating custom AppArmor policies  
+- Debugging AppArmor violations (`aa-status`, `journalctl`)  
 
 ## **4. Secure SSH Configuration and Hardening**  
    - **Disabling Root Login and Using Key-based Authentication**  
