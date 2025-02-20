@@ -56,8 +56,7 @@
 - **Securing `/tmp`, `/var`, and `/home` with Mount Options**  
 
 ## 15.6 Network Security and Firewall Management**  
-- **Configuring `iptables` and `nftables` for Packet Filtering**  
-- **Using `ufw` and `firewalld` for Simplified Firewall Management**  
+- **Configuring `iptables` and `nftables` for Packet Filtering**
 - **Detecting and Preventing Port Scans (`nmap`, `fail2ban`)**  
 - **Mitigating DDoS Attacks using Rate Limiting**  
 
