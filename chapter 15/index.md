@@ -1,34 +1,34 @@
 # Chapter 15: Advanced Security Practices**  
 
-## **1. Intrusion Detection and Prevention**  
-   - **Understanding Intrusion Detection and Prevention Systems (IDS/IPS)**  
-     - Difference between IDS and IPS  
-     - Host-based vs. Network-based IDS  
-   - **Implementing `fail2ban` for Brute-force Protection**  
-     - Installing and configuring `fail2ban`  
-     - Creating and modifying jail configurations  
-     - Monitoring logs and handling banned IPs  
-   - **Monitoring for Suspicious Activity**  
-     - Using `auditd` for system auditing  
-     - Monitoring system logs (`/var/log/auth.log`, `/var/log/secure`)  
-     - Using `psad` for detecting port scans  
-     - Real-time monitoring tools (`OSSEC`, `Suricata`, `Snort`)  
+## 15.1 Intrusion Detection and Prevention
+### 15.1.1 Understanding Intrusion Detection and Prevention Systems (IDS/IPS)**  
+- Difference between IDS and IPS  
+- Host-based vs. Network-based IDS  
+### 15.1.2 Implementing `fail2ban` for Brute-force Protection**  
+- Installing and configuring `fail2ban`  
+- Creating and modifying jail configurations  
+- Monitoring logs and handling banned IPs  
+### 15.1.3 Monitoring for Suspicious Activity**  
+- Using `auditd` for system auditing  
+- Monitoring system logs (`/var/log/auth.log`, `/var/log/secure`)  
+- Using `psad` for detecting port scans  
+- Real-time monitoring tools (`OSSEC`, `Suricata`, `Snort`)  
 
 ## 15.2. Data Encryption and Backup Security
 ### 15.2.1 Importance of Encryption and Secure Backups
-#### Why encryption matters for data security  
-#### Encryption at rest vs. encryption in transit  
+- Why encryption matters for data security  
+- Encryption at rest vs. encryption in transit  
 ### 15.2.2 Using `gpg` for File and Email Encryption
-#### Generating GPG keys  
-#### Encrypting and decrypting files  
-#### Using GPG for secure email communication  
+- Generating GPG keys  
+- Encrypting and decrypting files  
+- Using GPG for secure email communication  
 ### 15.2.3 Encrypting Disk and Partitions
-#### Using LUKS for full disk encryption  
-#### Configuring encrypted `/home` and swap partitions  
+- Using LUKS for full disk encryption  
+- Configuring encrypted `/home` and swap partitions  
 ### 15.2.4 Secure Backup Practices
-#### Best practices for backup encryption  
-#### Secure remote backups using `rsync` and `ssh`  
-#### Automating encrypted backups with `duplicity`  
+- Best practices for backup encryption  
+- Secure remote backups using `rsync` and `ssh`  
+- Automating encrypted backups with `duplicity`  
 
 ## **3. Mandatory Access Control (SELinux & AppArmor)**  
    - **Understanding Mandatory Access Control (MAC) vs. Discretionary Access Control (DAC)**  
