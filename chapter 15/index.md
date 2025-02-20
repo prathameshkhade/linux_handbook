@@ -30,7 +30,7 @@
 - Secure remote backups using `rsync` and `ssh`  
 - Automating encrypted backups with `duplicity`  
 
-## 3. Mandatory Access Control (SELinux & AppArmor)
+## 15.3 Mandatory Access Control (SELinux & AppArmor)
 ### 15.3.1 Understanding Mandatory Access Control (MAC) vs. Discretionary Access Control (DAC)**  
 - Difference between SELinux, AppArmor, and traditional Linux permissions  
 ### 15.3.2 SELinux (Security-Enhanced Linux) - Red Hat Based Systems**  
@@ -43,31 +43,25 @@
 - Creating custom AppArmor policies  
 - Debugging AppArmor violations (`aa-status`, `journalctl`)  
 
-## **4. Secure SSH Configuration and Hardening**  
-   - **Disabling Root Login and Using Key-based Authentication**  
-   - **Restricting SSH Access with Allow/Deny Rules**  
-   - **Implementing Two-Factor Authentication for SSH**  
-   - **Configuring SSH Chroot Jails for Restricted Access**  
+## 15.4 Secure SSH Configuration and Hardening**  
+- **Disabling Root Login and Using Key-based Authentication**  
+- **Restricting SSH Access with Allow/Deny Rules**  
+- **Implementing Two-Factor Authentication for SSH**  
+- **Configuring SSH Chroot Jails for Restricted Access**  
 
-## **5. Kernel Hardening and Security Enhancements**  
-   - **Applying Kernel Security Updates Regularly**  
-   - **Using `sysctl` for System Hardening (`/etc/sysctl.conf`)**  
-   - **Enabling Address Space Layout Randomization (ASLR)**  
-   - **Securing `/tmp`, `/var`, and `/home` with Mount Options**  
+## 15.5 Kernel Hardening and Security Enhancements**  
+- **Applying Kernel Security Updates Regularly**  
+- **Using `sysctl` for System Hardening (`/etc/sysctl.conf`)**  
+- **Enabling Address Space Layout Randomization (ASLR)**  
+- **Securing `/tmp`, `/var`, and `/home` with Mount Options**  
 
-## **6. Network Security and Firewall Management**  
-   - **Configuring `iptables` and `nftables` for Packet Filtering**  
-   - **Using `ufw` and `firewalld` for Simplified Firewall Management**  
-   - **Detecting and Preventing Port Scans (`nmap`, `fail2ban`)**  
-   - **Mitigating DDoS Attacks using Rate Limiting**  
+## 15.6 Network Security and Firewall Management**  
+- **Configuring `iptables` and `nftables` for Packet Filtering**  
+- **Using `ufw` and `firewalld` for Simplified Firewall Management**  
+- **Detecting and Preventing Port Scans (`nmap`, `fail2ban`)**  
+- **Mitigating DDoS Attacks using Rate Limiting**  
 
-## **7. Security Auditing and Compliance**  
-   - **Using `Lynis` for Linux Security Auditing**  
-   - **Automating Security Compliance Checks**  
-   - **Implementing a Logging and Alerting System (`logwatch`, `rsyslog`)**  
-
----
-
-This structure ensures a thorough discussion of **advanced security topics** while maintaining practical implementation strategies. You can expand each section with real-world examples, command-line usage, and troubleshooting tips to make it more valuable for readers.  
-
-Would you like me to provide additional details on any specific section? 🚀
+## 15.7 Security Auditing and Compliance**  
+- **Using `Lynis` for Linux Security Auditing**  
+- **Automating Security Compliance Checks**  
+- **Implementing a Logging and Alerting System (`logwatch`, `rsyslog`)**  
