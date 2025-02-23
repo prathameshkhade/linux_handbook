@@ -399,7 +399,7 @@ SELinux has different modes that determine how strictly it enforces its security
     
     To check if SELinux is in Enforcing mode, open your terminal and type:
     
-        getenforce
+        $ getenforce
         
     
     If it returns `Enforcing`, you’re good to go!
@@ -537,7 +537,7 @@ You can switch profiles between modes using these commands:
 
 For instance, to put the profile for the `apache2` webserver into enforce mode:
 
-    sudo aa-enforce /etc/apparmor.d/apache2
+    $ sudo aa-enforce /etc/apparmor.d/apache2
     
 
 #### Creating Custom AppArmor Policies
@@ -548,7 +548,7 @@ Creating custom AppArmor profiles can sound daunting, but AppArmor provides tool
     
     To start creating a profile for a script called `my_script.sh`:
     
-        sudo aa-genprof /path/to/my_script.sh
+        $ sudo aa-genprof /path/to/my_script.sh
         
     
     `aa-genprof` will guide you through the process. It will monitor the script's actions and ask you how to handle each access attempt – whether to "allow," "deny," or "learn" more.
@@ -566,7 +566,7 @@ When AppArmor blocks an action in Enforce mode or logs a violation in Complain m
     
     To view AppArmor related messages specifically, you can use:
     
-        sudo journalctl -f -k SYSLOG_IDENTIFIER=kernel -b | grep AppArmor
+        $ sudo journalctl -f -k SYSLOG_IDENTIFIER=kernel -b | grep AppArmor
         
     
     This command filters the kernel logs (`-k`) for AppArmor messages (`grep AppArmor`) and shows them in real-time (`-f`). The `-b` option limits it to the current boot.
